@@ -1552,67 +1552,6 @@ html {
   z-index: 1;
 }
 
-.fama-btn-primary {
-  width: 326px;
-  color: #ffffff;
-  background-color: #006ee6;
-  border: none;
-  border-radius: 15px;
-  font-size: 18px;
-  line-height: 23px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.fama-btn-primary img {
-  margin-right: 7px;
-}
-
-.fama-btn-secondary {
-  padding: 10px 16px;
-  border-radius: 3px;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  color: #4d5659;
-  background-color: #dedede;
-}
-
-.fama-btn-secondary:hover {
-  background-color: #006ee6;
-  color: #ffffff;
-}
-
-.fama-btn {
-  color: #ffffff;
-  background-color: #006ee6;
-  font-weight: 500;
-  border: none;
-  border-radius: 15px;
-  line-height: 23px;
-  padding: 10px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .button-link {
   border: none;
   background-color: transparent;
@@ -3211,9 +3150,6 @@ html {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #4f4f4f;
-}
-.layout .main .main-container .main-body .user-details-list .wallet-btn {
-  margin-top: 25px;
 }
 
 /*******************************
