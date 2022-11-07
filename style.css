@@ -1477,8 +1477,7 @@ a,
   text-decoration: none;
 }
 
-ul,
-.ul {
+ul, .ul {
   list-style: none;
   padding-left: 0;
 }
@@ -1539,6 +1538,14 @@ html {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
+}
+
+.fama-text-muted {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  color: #494d50 !important;
 }
 
 .z-index {
@@ -1613,6 +1620,82 @@ html {
   padding-right: 0;
 }
 
+.fama-scarch-bar input[type=search] {
+  width: 100%;
+  padding: 15px 4px 15px 65px;
+  background: #ebeef2 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 20px center;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+}
+.fama-scarch-bar input[type=search]::-webkit-input-placeholder {
+  color: #767e94;
+}
+.fama-scarch-bar input[type=search]::-moz-placeholder {
+  color: #767e94;
+}
+.fama-scarch-bar input[type=search]:-ms-input-placeholder {
+  color: #767e94;
+}
+.fama-scarch-bar input[type=search]::-ms-input-placeholder {
+  color: #767e94;
+}
+.fama-scarch-bar input[type=search]::placeholder {
+  color: #767e94;
+}
+.fama-scarch-bar button[type=submit]:hover {
+  opacity: 1;
+}
+.fama-scarch-bar input[type=search]:focus {
+  -webkit-box-shadow: 0 0 3px 0 #1183d6;
+          box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+.fama-btn-lg {
+  max-width: 450px;
+  width: 100%;
+}
+
+.fama-btn-md {
+  max-width: 326px;
+  width: 100%;
+}
+
+.fama-btn-secondary {
+  color: #4d5659;
+  background-color: #dedede;
+}
+
+.fama-btn-secondary:hover {
+  color: #ffffff;
+  background-color: #006ee6;
+}
+
+.fama-btn-primary {
+  color: #ffffff;
+  background-color: #006ee6;
+}
+
+.fama-btn-primary:hover {
+  -webkit-box-shadow: 0 0 0 0.15rem rgba(17, 132, 214, 0.5);
+          box-shadow: 0 0 0 0.15rem rgba(17, 132, 214, 0.5);
+}
+
+.fama-btn-img img {
+  width: 39px;
+  margin-right: 7px;
+}
+
+.fama-btn {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 53px;
+  border-radius: 15px;
+  border: none;
+}
+
 .gap {
   gap: 10px;
 }
@@ -1627,8 +1710,8 @@ html {
 }
 
 /*************************
-  **  Sidebar CSS Start   **
-  **************************/
+**  Sidebar CSS Start   **
+**************************/
 
 .layout .sidebar {
   background: #ffffff;
@@ -1749,7 +1832,7 @@ html {
 }
 .layout .sidebar .nav-bottom .nav-new-btn .add-icon {
   width: 27px;
-  color: #0132d7;
+  color: #0132D7;
 }
 .layout .sidebar .nav-bottom .nav-new-btn:hover {
   background: #e7e9fa;
@@ -1760,8 +1843,8 @@ html {
 }
 
 /*******************************
-  **  Navbar(Mobile) CSS Start  **
-  ********************************/
+**  Navbar(Mobile) CSS Start  **
+********************************/
 
 .layout .mobile-nav {
   display: none;
@@ -1805,8 +1888,8 @@ html {
 }
 
 /***********************************
-  **  Sidebar(Secondary) CSS Start  **
-  ************************************/
+**  Sidebar(Secondary) CSS Start  **
+************************************/
 
 .layout .sidebar-two {
   background: #0132d7;
@@ -1907,7 +1990,7 @@ html {
   color: #ffffff;
 }
 .layout .main .main-top {
-  background-color: #0132d7;
+  background-color: #0132D7;
   padding: 45px 35px;
   position: relative;
 }
@@ -1989,7 +2072,8 @@ html {
   margin: 25px 0;
   padding: 0 35px;
 }
-.layout .main .main-bottom h3 {
+.layout .main .main-bottom h3,
+.layout .main .main-bottom .page-title {
   margin-bottom: 24px;
   font-size: 24px;
   font-weight: 500;
@@ -2214,6 +2298,12 @@ html {
   background: transparent;
   padding: 0;
 }
+.layout .main .main-container .main-nav .main-nav-left h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 0;
+}
 .layout .main .main-container .main-nav .main-nav-right {
   display: block;
   height: 45px;
@@ -2228,7 +2318,7 @@ html {
   border-radius: 50%;
 }
 .layout .main .main-container .main-body {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 /***************************
@@ -2326,6 +2416,65 @@ html {
   line-height: 16px;
   letter-spacing: 1.5px;
 }
+.layout .main .main-container .main-body .transfer-card-title,
+.layout .main .main-container .main-body .transaction-summary-title {
+  color: rgb(79, 79, 79);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+.layout .main .main-container .main-body .to-card {
+  max-width: 343px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  background: white;
+  padding: 22px 12px;
+  border-radius: 10px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.layout .main .main-container .main-body .to-card .user-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.layout .main .main-container .main-body .to-card .user-item .choose-user-img {
+  width: 48px;
+  height: 48px;
+}
+.layout .main .main-container .main-body .to-card span {
+  width: 70%;
+  margin-right: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #2e3a59;
+}
+.layout .main .main-container .main-body .to-card span h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.16px;
+}
+.layout .main .main-container .main-body .to-card span .logo {
+  width: 86px;
+  height: 16px;
+}
 .layout .main .main-container .main-body .linked-account {
   margin: 46px 0;
 }
@@ -2366,9 +2515,9 @@ html {
   background-color: transparent;
 }
 .layout .main .main-container .main-body .linked-account .lc-top .add-icon {
-  height: 28px;
-  width: 28px;
-  color: #0132d7;
+  height: 32px;
+  width: 32px;
+  color: #0132D7;
 }
 .layout .main .main-container .main-body .linked-account .lc-bottom {
   display: grid;
@@ -2473,7 +2622,6 @@ html {
   line-height: 21px;
   margin-bottom: 0;
 }
-
 .layout .main .main-container .main-body .events {
   margin: 1em;
   margin-bottom: 0.4em;
@@ -2570,8 +2718,8 @@ html {
 }
 
 /*******************
-    confirmation-card
-   *******************/
+ confirmation-card
+*******************/
 
 .layout .main .main-container .main-body .confirmation-card {
   min-height: 520px;
@@ -2638,8 +2786,8 @@ html {
 }
 
 /*****************************
-  **  Confirm Page CSS Start  **
-  ******************************/
+**  Confirm Page CSS Start  **
+******************************/
 
 .layout .main .main-container .main-body .amount {
   font-size: 20px;
@@ -2673,7 +2821,7 @@ html {
   width: 100%;
 }
 .layout .main .main-container .main-body .transfer-overview-card .logo span {
-  color: #0132d7;
+  color: #0132D7;
   font-size: 11px;
   font-weight: 400;
   line-height: 14px;
@@ -2683,7 +2831,7 @@ html {
 }
 .layout .main .main-container .main-body .transfer-overview-card .balance {
   font-family: Poppins;
-  color: #0132d7;
+  color: #0132D7;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -2700,7 +2848,7 @@ html {
 }
 .layout .main .main-container .main-body .transfer-overview-card .account-type {
   color: #535861;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 10px;
   margin-top: 12px;
@@ -2728,7 +2876,7 @@ html {
   width: 100%;
 }
 .layout .main .main-container .main-body .transfer-overview-card-two .logo span {
-  color: #0132d7;
+  color: #0132D7;
   font-size: 11px;
   font-weight: 400;
   line-height: 14px;
@@ -2738,7 +2886,7 @@ html {
 }
 .layout .main .main-container .main-body .transfer-overview-card-two .balance {
   font-family: Poppins;
-  color: #0132d7;
+  color: #0132D7;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -2779,8 +2927,8 @@ html {
 }
 
 /********************************
-  **  Processing Page CSS Start  **
-  *********************************/
+**  Processing Page CSS Start  **
+*********************************/
 
 .layout .main .main-container .main-body .confirmation-card {
   min-height: 520px;
@@ -2815,8 +2963,8 @@ html {
 }
 
 /********************************
-  **  Recipient Page CSS Start  **
-  *********************************/
+**  Recipient Page CSS Start  **
+*********************************/
 
 .layout .main .main-container .main-body .fama-control {
   min-height: 48px;
@@ -2829,10 +2977,20 @@ html {
   background: #ffffff;
   font-size: 18px;
 }
+.layout .main .main-container .main-body .fama-select {
+  min-height: 48px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 10px !important;
+  color: #7e8288;
+  font-size: 18px;
+}
 .layout .main .main-container .main-body .fama-phone-control {
   min-height: 48px;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   border: 1px solid #e0e0e0;
   border-radius: 10px !important;
   color: #101010;
@@ -2847,12 +3005,12 @@ html {
   border-right: 1px solid #e0e0e0;
 }
 .layout .main .main-container .main-body .fama-label {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #0132d7;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   margin-left: 8px;
 }
 .layout .main .main-container .main-body .require::after {
@@ -2860,8 +3018,8 @@ html {
 }
 
 /**************************************
-  **  Choose Recipient Page CSS Start  **
-  ***************************************/
+**  Choose Recipient Page CSS Start  **
+***************************************/
 
 .layout .main .main-container .main-body .input-group i {
   position: relative;
@@ -3038,8 +3196,8 @@ html {
 }
 
 /****************************
-  **  Wallet Page CSS Start  **
-  *****************************/
+**  Wallet Page CSS Start  **
+*****************************/
 
 .layout .main .main-container .main-body .user-details-list .user-details-list-btn .wallet-content {
   margin-left: 1rem;
@@ -3059,8 +3217,8 @@ html {
 }
 
 /*******************************
-  **  Manage Account CSS Start  **
-  ********************************/
+**  Manage Account CSS Start  **
+********************************/
 
 .layout .main .main-container .main-body .my-account .my-account-content .my-account-btn {
   display: -webkit-box;
@@ -3101,39 +3259,22 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2rem;
   text-align: center;
 }
-.layout
-  .main
-  .main-container
-  .main-body
-  .my-account
-  .my-account-content
-  .account-details
-  .account-item
-  .account-details-img {
+.layout .main .main-container .main-body .my-account .my-account-content .account-details .account-item .account-details-img {
   width: 65px;
   height: 65px;
   background: #69e2e2;
   border-radius: 50%;
   margin-bottom: 9px;
 }
-.layout
-  .main
-  .main-container
-  .main-body
-  .my-account
-  .my-account-content
-  .account-details
-  .account-item
-  .account-details-img
-  img {
+.layout .main .main-container .main-body .my-account .my-account-content .account-details .account-item .account-details-img img {
   width: 70%;
   margin: auto;
 }
@@ -3222,8 +3363,8 @@ html {
 }
 
 /******************************** 
-  **  Funding Source CSS Start  ***
-  *********************************/
+**  Funding Source CSS Start  ***
+*********************************/
 
 .layout .main .main-container .main-body .acc-verification-card {
   border-width: 2px !important;
@@ -3244,56 +3385,18 @@ html {
 }
 .layout .main .main-container .main-body .acc-verification-card .card-body ul li {
   margin-bottom: 5px;
-  color: #7e8a9b;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
 }
-
-/********************************/ /*******************************
-  **  Choose Partners CSS Start  **      **  Varify Account CSS Start  **
-  *********************************/ /********************************/
-
+.layout .main .main-container .main-body .section-info p {
+  color: #6c757d;
+}
 .layout .main .main-container .main-body .choose-partners,
-.layout .main .main-container .main-body .varify-account {
-  background-color: #ffffff;
-  border-radius: 24px;
+.layout .main .main-container .main-body .choose-bank-account {
   padding: 40px 50px;
 }
-.layout .main .main-container .main-body .choose-partners .card-head,
-.layout .main .main-container .main-body .varify-account .card-head {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.layout .main .main-container .main-body .choose-partners .card-head .card-thumbnail,
-.layout .main .main-container .main-body .varify-account .card-head .card-thumbnail {
-  width: 200px;
-  margin: 0 auto;
-}
-.layout .main .main-container .main-body .choose-partners .card-head .card-thumbnail img,
-.layout .main .main-container .main-body .varify-account .card-head .card-thumbnail img {
-  width: 100%;
-}
-.layout .main .main-container .main-body .choose-partners .form-label,
-.layout .main .main-container .main-body .varify-account .form-label {
-  color: #4d5659;
-  font-size: 14px;
-}
-.layout .main .main-container .main-body .choose-partners .form-control:focus,
-.layout .main .main-container .main-body .varify-account .form-control:focus {
-  border-color: #006ee6;
-}
-.layout .main .main-container .main-body .choose-partners .bank-logo,
-.layout .main .main-container .main-body .varify-account .bank-logo {
-  max-width: 300px;
-  width: 100%;
-  margin: 0 auto;
-}
-.layout .main .main-container .main-body .choose-partners .bank-logo img,
-.layout .main .main-container .main-body .varify-account .bank-logo img {
-  width: 100%;
-}
 .layout .main .main-container .main-body .choose-partners .search-btn,
-.layout .main .main-container .main-body .varify-account .search-btn {
+.layout .main .main-container .main-body .choose-bank-account .search-btn {
   width: 100%;
   border-radius: 3px;
   font-size: 1rem;
@@ -3306,13 +3409,13 @@ html {
   background-color: #006ee6;
 }
 .layout .main .main-container .main-body .choose-partners .bank-list .bank-list-item,
-.layout .main .main-container .main-body .varify-account .bank-list .bank-list-item {
+.layout .main .main-container .main-body .choose-bank-account .bank-list .bank-list-item {
   width: 45%;
   display: inline-block;
   border-bottom: 1px solid #d9dbde;
 }
 .layout .main .main-container .main-body .choose-partners .bank-list .bank-list-item .bank-list-btn,
-.layout .main .main-container .main-body .varify-account .bank-list .bank-list-item .bank-list-btn {
+.layout .main .main-container .main-body .choose-bank-account .bank-list .bank-list-item .bank-list-btn {
   border: none;
   background: transparent;
   display: block;
@@ -3329,9 +3432,115 @@ html {
   margin-right: 5%;
 }
 
+.layout .main .main-container .main-body .choose-partners .bank-list .bank-list-item:nth-child(odd),
+.layout .main .main-container .main-body .choose-bank-account .bank-list .bank-list-item:nth-child(odd) {
+  margin-right: 5%;
+}
+.layout .main .main-container .main-body .verify-account {
+  padding: 0px 50px;
+}
+.layout .main .main-container .main-body .verify-account .bank-logo {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.layout .main .main-container .main-body .verify-account .bank-logo img {
+  width: 100%;
+}
+.layout .main .main-container .main-body .choose-bank-account .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.layout .main .main-container .main-body .choose-bank-account .accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.13);
+}
+.layout .main .main-container .main-body .choose-bank-account .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.layout .main .main-container .main-body .choose-bank-account .bank-acc-img {
+  max-width: 300px;
+  width: 100%;
+  height: 65px;
+  border: 1px solid #dee2e6;
+}
+.layout .main .main-container .main-body .choose-bank-account .bank-acc-img img {
+  width: 100%;
+  height: 100%;
+}
+.layout .main .main-container .main-body .loading-section {
+  background: #fff;
+  padding: 70px 30px;
+  border-radius: 15px;
+}
+.layout .main .main-container .main-body .loading-section .card-head {
+  margin-bottom: 40px;
+}
+.layout .main .main-container .main-body .loading-section .card-head .card-thumbnail {
+  width: 200px;
+  margin: 0 auto;
+}
+.layout .main .main-container .main-body .loading-section .card-head .card-thumbnail img {
+  width: 100%;
+}
+.layout .main .main-container .main-body .loading-section .loader {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  padding: 0px;
+  opacity: 0.5;
+  border: 3px solid #006ee6;
+  -webkit-animation: loader 1s ease-in-out infinite alternate;
+  animation: loader 1s ease-in-out infinite alternate;
+}
+.layout .main .main-container .main-body .loading-section .loader:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  border: 3px solid #006ee6;
+}
+.layout .main .main-container .main-body .loading-section .loader:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border: 3px solid #006ee6;
+}
+@keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg) scale(1, 1);
+            transform: rotate(0deg) scale(1, 1);
+    border-radius: 0px;
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(0, 0);
+            transform: rotate(360deg) scale(0, 0);
+    border-radius: 50px;
+  }
+}
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: rotate(0deg) scale(1, 1);
+    border-radius: 0px;
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(0, 0);
+    border-radius: 50px;
+  }
+}
+
 /**********************************
-  **  Responsive Design CSS Start  **
-  ***********************************/
+**  Responsive Design CSS Start  **
+***********************************/
 
 @media (max-width: 1200px) {
   .layout .main .main-top .grid {
@@ -3373,13 +3582,17 @@ html {
   .layout .main .main-bottom .fin-card .fin-card-body .fin-card-thumbnail .utility-bill h6 {
     font-size: 12px;
   }
+  .layout .main .main-container .main-body .choose-bank-account {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media (max-width: 768px) {
   .layout {
     grid-template-columns: 1fr !important;
   }
   .layout .sidebar,
-  .layout .sidebar-two {
+.layout .sidebar-two {
     position: fixed;
     top: 0;
     left: -100%;
@@ -3387,10 +3600,10 @@ html {
     height: 100vh;
     z-index: 999;
     -webkit-transition-duration: 250ms;
-    transition-duration: 250ms;
+            transition-duration: 250ms;
   }
   .layout .sidebar .nav-top,
-  .layout .sidebar-two .nav-top {
+.layout .sidebar-two .nav-top {
     margin-bottom: 39px;
   }
   .layout .main-logo .close {
@@ -3406,6 +3619,9 @@ html {
   .lc-bottom {
     grid-template-columns: repeat(2, 140px) !important;
   }
+  .layout .main .main-container .main-body .verify-account {
+    padding: 0;
+  }
 }
 @media (max-width: 576px) {
   .layout .main .main-container .main-body .grid {
@@ -3419,7 +3635,7 @@ html {
   }
   .layout .main .main-container .main-body .connector-v {
     -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+            transform: rotate(90deg);
     margin-left: auto;
     margin-right: auto;
   }
@@ -3447,20 +3663,16 @@ html {
     padding: 40px 20px;
   }
   .fama-btn-secondary {
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 700;
   }
 }
 @media (max-width: 570px) {
-  .layout
-    .main
-    .main-container
-    .main-body
-    .my-account
-    .my-account-content
-    .account-details
-    .account-item
-    .account-details-img {
+  .layout .main .main-container .main-body .my-account .my-account-content .account-details .account-item .account-details-img {
     width: 35px;
     height: 35px;
+  }
+  .layout .main .main-container .main-body .choose-bank-account .accordion-button {
+    font-size: 12px;
   }
 }
